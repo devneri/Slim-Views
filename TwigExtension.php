@@ -44,10 +44,10 @@ class TwigExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            new \Twig_SimpleFunction('urlFor', array($this, 'urlFor')),
-            new \Twig_SimpleFunction('baseUrl', array($this, 'base')),
-            new \Twig_SimpleFunction('siteUrl', array($this, 'site')),
-            new \Twig_SimpleFunction('currentUrl', array($this, 'currentUrl')),
+            new \Twig_Function('urlFor', array($this, 'urlFor')),
+            new \Twig_Function('baseUrl', array($this, 'base')),
+            new \Twig_Function('siteUrl', array($this, 'site')),
+            new \Twig_Function('currentUrl', array($this, 'currentUrl')),
         );
     }
 
